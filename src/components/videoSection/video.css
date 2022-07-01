@@ -1,0 +1,21 @@
+.video-card {
+    background-color: hsl(180, 35%, 15%);
+}
+
+.video-card {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.video-card>h3 {
+    padding: 20px 0;
+    font-size: 25px;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+

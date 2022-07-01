@@ -1,0 +1,134 @@
+.navbar{
+  background-color: transparent;
+  height: 4rem;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.navbar.active {
+  background-color: hsl(224, 51%, 10%);
+  
+}
+
+.navbar-container {
+  height: 4rem;
+  max-width: 1500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 3%;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-image {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.navbar-logo, .navbar-text {
+  color: #fff;
+}
+
+.navbar-text {
+  font-size: 1.5rem;
+}
+
+.navbar-logo {
+  font-size: 19px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  text-transform: capitalize;
+}
+
+.nav-link {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+.nav-link:hover {
+  border-bottom: 3px solid #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.icon {
+  font-size: 22px;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    background-color: hsl(224, 51%, 10%);
+  }
+  .nav-menu {
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    top: 4rem;
+    right: 100%;
+    opacity: 1;
+    transition: all 1s ease;
+  }
+
+  .nav-menu.active {
+    background-color: hsl(224, 51%, 10%);
+    right: 0;
+    opacity: 1;
+    transition: all 1s ease;
+    z-index: 1;
+  }
+
+  .icon{
+    margin: 3px;
+    font-size: 18px;
+  }
+
+  .menu-icon {
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px;
+  }
+
+  .nav-item {
+    width: 100%;
+    height: 50px;
+  }
+
+  .nav-link:hover {
+    background-color: #fff;
+    background-color: hsl(224, 51%, 10%);
+  }
+}
+
