@@ -16,7 +16,7 @@ export const cardImages = [
     },
     {
         number: 3,
-        title: "Namgyel Tsemo, Leh",
+        title: "Namgyel Tsemo",
         className: "sm-img",
         alt: "top-six images",
         description: "Local site seeing"
